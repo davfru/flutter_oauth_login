@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'Flutter appointement backend'
+Globals:
+  Function:
+    Timeout: 30
+Parameters:
+  ProjectName:
+    Type: String
+  Env:
+    Type: String
+    Description: dev|test|prod
+  UserPoolDomainName:
+    Type: String
+    Description: Domain name for user pool
+  UserPoolName:
+    Type: String
+    Description: User pool name
+  GoogleClientId:
+    Type: String
+    Description: Google OAuth Client ID
+Resources:
+  Cognito:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location: ./iac/cognito.yaml
+      Parameters:
+        UserPoolDomainName: !Ref UserPoolDomainName
+        UserPoolName: !Sub "${Env}-${UserPoolName}"
+        GoogleClientId: !Ref GoogleClientId
+        Env: !Ref Env

@@ -1,0 +1,24 @@
+version: 1.0
+
+.common_params: &common_params
+  resolve_s3: true
+  region: 'eu-central-1'
+  confirm_changeset: 'true'
+  capabilities: 'CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM'
+  image_repositories: []
+
+test:
+  deploy:
+    parameters:
+      <<: *common_params
+      s3_prefix: 'test-flutter-google-login'
+      stack_name: 'test-flutter-google-login'
+      parameter_overrides:
+        - Env="test"
+        - ProjectName="flutter-google-login"
+        - UserPoolDomainName="flutter-google-login"
+        - UserPoolName="flutter-google-login"
+        - GoogleClientId="875140145521-q6jrqas6aedbc1js7n00oss74079i6g8.apps.googleusercontent.com"
+      tags:
+        - 'Environment=test'
+        - 'ProjectName=flutter-google-login'

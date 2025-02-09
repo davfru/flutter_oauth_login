@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="dGsvdM9-jh6Zkj6ivhWE">
+    <mxGraphModel dx="2022" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-1" value="Amazon Cognito" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.cognito;" vertex="1" parent="1">
+          <mxGeometry x="280" y="222" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png;" vertex="1" parent="1">
+          <mxGeometry x="640" y="233.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="k56ejSWuWEJTTyRDNeQE-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="210" as="sourcePoint" />
+            <mxPoint x="240" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-60" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-11" value="&lt;b&gt;1.&lt;/b&gt; GET oauth2/authorize" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k56ejSWuWEJTTyRDNeQE-8">
+          <mxGeometry x="-0.1534" y="1" relative="1" as="geometry">
+            <mxPoint x="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.994;entryY=0.215;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k56ejSWuWEJTTyRDNeQE-1" target="k56ejSWuWEJTTyRDNeQE-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="240" as="sourcePoint" />
+            <mxPoint x="80" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="240" />
+              <mxPoint x="210" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-25" value="&lt;b&gt;4.&lt;/b&gt; authorization code" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k56ejSWuWEJTTyRDNeQE-12">
+          <mxGeometry x="-0.0027" y="1" relative="1" as="geometry">
+            <mxPoint x="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.984;exitY=0.557;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-30.960000000000036" y="276.75899999999996" as="sourcePoint" />
+            <mxPoint x="280" y="276.7804761904761" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="276.59" />
+              <mxPoint x="200" y="276.59" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-17" value="&lt;b&gt;5.&lt;/b&gt; POST oauth2/token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k56ejSWuWEJTTyRDNeQE-16">
+          <mxGeometry x="-0.1534" y="1" relative="1" as="geometry">
+            <mxPoint x="33" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-19" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-90" y="215" width="60" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-7" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://images.seeklogo.com/logo-png/35/2/flutter-logo-png_seeklogo-354671.png;" vertex="1" parent="k56ejSWuWEJTTyRDNeQE-19">
+          <mxGeometry x="7.5" y="36" width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-18" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="k56ejSWuWEJTTyRDNeQE-19">
+          <mxGeometry width="60" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="276.66" as="sourcePoint" />
+            <mxPoint x="640" y="276.66" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="276.66" />
+              <mxPoint x="630" y="276.66" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-21" value="&lt;b&gt;2.&lt;/b&gt; Authorization Code grant request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k56ejSWuWEJTTyRDNeQE-20">
+          <mxGeometry x="-0.1534" y="1" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="k56ejSWuWEJTTyRDNeQE-18" target="k56ejSWuWEJTTyRDNeQE-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-60" y="390" />
+              <mxPoint x="680" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-24" value="&lt;b&gt;3.&lt;/b&gt; Insert and validate credentials" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k56ejSWuWEJTTyRDNeQE-23">
+          <mxGeometry x="-0.0979" y="1" relative="1" as="geometry">
+            <mxPoint x="41" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.994;entryY=0.215;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="310" as="sourcePoint" />
+            <mxPoint x="-30" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="310" />
+              <mxPoint x="210" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k56ejSWuWEJTTyRDNeQE-27" value="&lt;b&gt;6.&lt;/b&gt; return access token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k56ejSWuWEJTTyRDNeQE-26">
+          <mxGeometry x="-0.0027" y="1" relative="1" as="geometry">
+            <mxPoint x="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
